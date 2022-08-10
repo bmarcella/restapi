@@ -8,9 +8,8 @@ app.use(bodyParser.json());
 
 app.use("/users",usersRoutes);
 
-
 app.get("/", (req, res)=>{
-    res.send("Helo");
+    res.send("Helo mon ami ");
 });
 
 var PORT = 5000;
