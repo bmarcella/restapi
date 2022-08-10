@@ -7,9 +7,11 @@ var app = express();
 app.use(bodyParser.json());
 
 app.use("/users",usersRoutes);
-
+var a = 5; 
+var b = 10;
 app.get("/", (req, res)=>{
-    res.send("Helo mon ami ");
+    var c = a + b;
+    res.send("La somme est : "+c);
 });
 
 var PORT = 5000;
